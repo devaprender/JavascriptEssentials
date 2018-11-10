@@ -1,5 +1,5 @@
-let nome = 'Rafael'; //string literal
-let idade = 25; // number literal
-let estaAprovado = true; //boolean
-let sobrenome = undefined; // Undefined
-let corSelecionado = null // Redefinir um valor
+let nome = 'Rafael'; 
+let idade = 25; 
+let estaAprovado = true; 
+let sobrenome = undefined;
+let corSelecionado = null;
