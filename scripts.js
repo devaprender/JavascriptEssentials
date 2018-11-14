@@ -1,13 +1,6 @@
-let nome = 'Rafael'; 
-let idade = 25; 
-let estaAprovado = true; 
-let sobrenome = undefined;
+// Arrays
 
-let pessoa = {
-    nome: 'Rafael',
-    idade: 25,
-    estaAprovado: true,
-    sobrenome : 'de souza'
- };
-
- console.log(pessoa);
+let familia  = [true,45,'jhonatan',17];
+console.log(familia.length);
+console.log(familia[0]);
+let nomeDoColega = []
