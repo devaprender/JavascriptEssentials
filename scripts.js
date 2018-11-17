@@ -1,6 +1,9 @@
-// Arrays
+// Verbo + Substantivo
+let corSite = "azul";
+function resetaCor(cor,tonalidade){
+    corSite = cor + ' ' + tonalidade;
+};
 
-let familia  = [true,45,'jhonatan',17];
-console.log(familia.length);
-console.log(familia[0]);
-let nomeDoColega = []
+console.log(corSite);
+resetaCor("verde","claro");
+console.log(corSite);
