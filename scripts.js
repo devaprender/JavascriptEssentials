@@ -1,21 +1,17 @@
-// Operador Lógico e (&&) 
-// Retorna TRUE se os dois operandos forem true
+// Falsy
 
-//console.log(true && false);
-//Operador Lógico ou (||)
-//Retornar true se um dos operandos forem true
-let maiorDeIdade = false;
-let possuiCarteiraDeTrabalho = false;
-let podeAplicar = maiorDeIdade || possuiCarteiraDeTrabalho;
+//undefined
+//null
+// 0
+// false
+// ''
+// NaN - not a number
 
-console.log('pode aplicar: ',podeAplicar);
+//Truthy 
 
-// Operador NOT (!)
-let candidatoRecusado = !podeAplicar;
+let corPersonalizada =  '';
+let corPadrao = 'Azul';
+let corPerfil = corPersonalizada || corPadrao;
 
-console.log('Candidato Recusado',candidatoRecusado);
-
-
-
-
+console.log(corPerfil);
 
