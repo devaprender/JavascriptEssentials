@@ -1,17 +1,9 @@
-// Falsy
+let a  = 'vermelho';
+let b = 'azul';
 
-//undefined
-//null
-// 0
-// false
-// ''
-// NaN - not a number
+let c = a;
+a = b;
+b = c;
 
-//Truthy 
-
-let corPersonalizada =  '';
-let corPadrao = 'Azul';
-let corPerfil = corPersonalizada || corPadrao;
-
-console.log(corPerfil);
-
+console.log(a);
+console.log(b);
