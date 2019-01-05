@@ -1,16 +1,18 @@
-// If..Else
+let permissao; // comum,gerente,diretor
+permissao = 'diretor';
+switch (permissao) {
+    case 'comum':
+    console.log('usuário comum');
+    break;
 
-// Se a hora estiver entre 06:00 até 12:00 : Bom dia!
-// Se estiver entre 12:00 até 18:00 : Boa tarde!
-// Caso contrário : Boa noite!
-let hora = 22;
+    case 'gerente':
+    console.log('usuário gerente');
+    break;
 
-if (hora > 6 && hora < 12) {
-    console.log("bom dia");
-}
-else if (hora > 12 && hora < 18) {
-    console.log("Boa tarde");
-}
-else {
- console.log("Boa noite");
+    case 'diretor':
+    console.log('usuário diretor');
+    break;
+
+    default:
+    console.log('Usuário não reconhecido!');
 }
