@@ -1,18 +1,13 @@
-let permissao; // comum,gerente,diretor
-permissao = 'diretor';
-switch (permissao) {
-    case 'comum':
-    console.log('usuário comum');
-    break;
+// console.log('Estou aprendendo!');
+// console.log('Estou aprendendo!');
+// console.log('Estou aprendendo!');
+// console.log('Estou aprendendo!');
+// console.log('Estou aprendendo!');
 
-    case 'gerente':
-    console.log('usuário gerente');
-    break;
+// 1.For
 
-    case 'diretor':
-    console.log('usuário diretor');
-    break;
-
-    default:
-    console.log('Usuário não reconhecido!');
+for(let i = 5; i >= 1; i--) {
+    if(i % 2 !== 0){ 
+        console.log(i);
+    }
 }
