@@ -1,20 +1,19 @@
-// Divisível por 3 => Fizz
-// Divisível por 5 => Buzz
-// Divisível por 3 e 5 => FizzBuzz
-// Não divisível por 3 ou 5 => entrada
-// Não é um número => 'Não é um número'
-const resultado = fizzBuzz(11);
-console.log(resultado);
+// Velocidade máxima de até 70
+// a cada 5km acima do limite você ganha 1 ponto
+// Math.Floor()
+// caso pontos  maior que 12 -> "Carteira Suspendida"
+verificarVelocidade(130);
 
-function fizzBuzz(entrada){
-    if ( typeof entrada !== 'number')
-        return 'Não é um número';
-    if ((entrada % 3 === 0) && (entrada % 5 === 0))
-        return 'FizzBuzz';
-    if (entrada % 3 === 0)
-        return 'Fizz';
-    if (entrada % 5 === 0)
-        return 'Buzz';
-    
-    return entrada;
- }
+function verificarVelocidade(velocidade) {
+    const velocidadeMaxima = 70;
+    const KmPorPonto = 5;
+    if ( velocidade <= velocidadeMaxima)   
+        console.log('Ok');
+    else {
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / KmPorPonto));
+        if( pontos >= 12)
+            console.log('Carteira Suspensa');
+        else
+            console.log('Pontos',pontos);
+    }
+}
