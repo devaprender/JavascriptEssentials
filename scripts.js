@@ -1,12 +1,15 @@
-// Receber uma quantidade de valores para avaliar
-// função exibe se cada valor é par ou impar
+// Criar um método para ler propriedades de um objeto e 
+// exibir somente as propriedades do tipo string que estão nesse objeto
 
-exibirTipo(5);
-function exibirTipo(limite) {
-   for (let i = 0; i <= limite; i++) {
-       if ( i % 2 === 0) 
-            console.log(i,'PAR');
-        else
-            console.log(i,'IMPAR');
-   }
+const filme = {
+    titulo : 'Vingadores',
+    ano : 2018,
+    diretor: 'Robin',
+    personagem : 'Thor'
+}
+exibirPropriedades(filme);
+function exibirPropriedades(obj) {
+    for (prop in obj)
+        if(typeof obj[prop] === 'string')
+            console.log(prop,obj[prop])
 }
