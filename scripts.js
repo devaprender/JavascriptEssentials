@@ -1,25 +1,30 @@
-// Criar função somar que retorna a 
-// soma de todos os múltiplos de 3 e 5
+// Exercício Nota Escolar
+// Obter a média a partir de um array
 
-// Multiplos de 3
-// 3,6,9
-// Multiplos de 5
-// 5,10
+// 0-59: F
+// 60-69: D
+// 70-79: C
+// 80-89: D
+// 90-100 : A
+const array = [70,70,80];
+// 73.33
 
-//Somando os multiplos 
-// armazenar os multiplos de 3
-// armazenar os multiplos de 5
-// somar os dois
+console.log(mediaDoAluno(array));
 
-somar(10);
-function somar(limite) {
-   let multiplosDe3 = 0;
-   let multiploDe5 = 0;
-   for(i =0;i <= limite;i++){
-       if(i % 3 === 0)
-        multiplosDe3 += i;
-        if(i % 5 === 0)
-        multiploDe5 += i;
-   }
-   console.log(multiplosDe3 + multiploDe5);
+function mediaDoAluno(notas) {
+      const media = calcularMedia(notas);
+
+      if (media < 59) return 'F';
+      if (media < 69) return 'D';
+      if (media < 79) return 'C';
+      if (media < 89) return 'B';
+      return 'A'
+}
+
+function calcularMedia(array) {
+      let soma = 0;
+      for (let valor of array) {
+            soma += valor;
+      }
+      return soma/(array.length);
 }
