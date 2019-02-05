@@ -1,19 +1,21 @@
-// Criar uma função que exibe a quantidade de * 
-// que aquela linha possui
-exibirAsteriscos(10);
+// Criar função para mostrar os números primos
 
-function exibirAsteriscos(linhas) {
-//     let padrao = '';
-//     for(let linha = 1; linha <= linhas; linha++){
-//           padrao += '*';
-//           console.log(padrao);
-//     }
-      for(let linha = 1; linha <= linhas; linha++){
-            let padrao = '';
-            for(let i = 0; i < linha; i++){
-                  padrao += '*';
-            }
-            console.log(padrao);
+// Primos
+// Compostos
+
+exibirNumerosPrimos(15);
+
+function exibirNumerosPrimos(limite){
+      for(let numero = 2; numero <= limite; numero++){
+            if (NumeroPrimo(numero)) console.log(numero);
       }
 }
 
+function NumeroPrimo(numero) {
+      for (let divisor = 2; divisor < numero; divisor++){
+            if(numero % divisor === 0) {
+                  return false;
+            }
+      }
+      return true;
+}
