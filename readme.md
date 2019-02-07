@@ -1,6 +1,6 @@
 
-# Curso Completo de Javascript/ Complete Javascript Course
-
+# Curso Completo de Javascript/ Complete Javascript Course 
+### Author :https://github.com/Jhonatan-de-Souza
 Código fonte do YouTube Code Hill College/Source Code for the Code Hill College YouTube Channel
 # [Code Hill College](https://www.youtube.com/channel/UCm63tB8wsKOVvxoU4iMpS2A)
 ## Como usar / How to use
