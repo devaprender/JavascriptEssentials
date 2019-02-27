@@ -1,21 +1,12 @@
-// Criar função para mostrar os números primos
-
-// Primos
-// Compostos
-
-exibirNumerosPrimos(15);
-
-function exibirNumerosPrimos(limite){
-      for(let numero = 2; numero <= limite; numero++){
-            if (NumeroPrimo(numero)) console.log(numero);
-      }
+//Javascript Aula 36 - Natureza dinâmica de Objetos
+const mouse = {
+      cor : 'red',
+      marcar: 'dazz'
 }
-
-function NumeroPrimo(numero) {
-      for (let divisor = 2; divisor < numero; divisor++){
-            if(numero % divisor === 0) {
-                  return false;
-            }
-      }
-      return true;
+mouse.velocidade = 5000;
+mouse.trocarDPI = function () {
+      console.log('mudando DPI ');
 }
+delete mouse.velocidade;
+delete mouse.trocarDPI;
+console.log(mouse);
