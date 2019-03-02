@@ -1,12 +1,19 @@
-//Javascript Aula 36 - Natureza dinâmica de Objetos
-const mouse = {
-      cor : 'red',
-      marcar: 'dazz'
+const celular = {
+      marcaCelular : 'ASUS',
+      tamanhoTela: {
+            vertical: 155,
+            horizontal: 75
+      },
+      ligar: function () {
+            console.log("Fazendo Ligação...");
+      }
 }
-mouse.velocidade = 5000;
-mouse.trocarDPI = function () {
-      console.log('mudando DPI ');
-}
-delete mouse.velocidade;
-delete mouse.trocarDPI;
-console.log(mouse);
+
+
+const novoObjeto = Object.assign({
+      bateria: 5000
+},celular);
+console.log(novoObjeto);
+
+const objeto2 = {...celular};
+console.log(objeto2);
