@@ -1,0 +1,19 @@
+/* #container {
+    width: 600px;
+    height: 200px;
+    background:yellow;
+} */
+.col1 {
+    color: white;
+    float:absolute;
+    width:800px;
+    height: 200px;
+    background:red;
+}
+.col2 {
+    color: white;
+    float:absolute;
+    width:800px;
+    background:blue;
+height: 200px;    
+}

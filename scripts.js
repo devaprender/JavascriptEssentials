@@ -1,19 +1,7 @@
-const celular = {
-      marcaCelular : 'ASUS',
-      tamanhoTela: {
-            vertical: 155,
-            horizontal: 75
-      },
-      ligar: function () {
-            console.log("Fazendo Ligação...");
-      }
-}
+// JAVASCRIPT AULA 56 ARROW FUNCTIONS 
+const marcas = [
+    {id:1, nome:'a'},
+    {id:2, nome:'b'}
+];
 
-
-const novoObjeto = Object.assign({
-      bateria: 5000
-},celular);
-console.log(novoObjeto);
-
-const objeto2 = {...celular};
-console.log(objeto2);
+console.log(marcas.find((marca) => marca.nome === 'a'));
