@@ -1,20 +1,10 @@
-// JAVASCRIPT AULA 58 ESVAZIANDO UM ARRAY
-let numeros = [1,2,3,4,5,6];
-let outros = numeros;
-// Solução 1
-// numeros = [];
-// console.log(outros);
-
-// Solução 2 
-numeros.length = 0;
-// console.log(numeros);
-// console.log(outros);
-
-// Solução 3
-// numeros.splice(0,numeros.length);
-// console.log(numeros);
-// console.log(outros);
-
-// Solução 4
-// while (numeros.length > 0)
-//     numeros.pop();
+// JAVASCRIPT AULA 59 COMBINANDO E CORTANDO ARRAYS
+const primeiro = [{id:1}];
+const segundo = [4,5,6];
+primeiro[0].id = 10;
+// Combinar
+const combinado = primeiro.concat(segundo);
+console.log(combinado);
+// Dividir
+const cortado = combinado.slice();
+console.log(cortado);
