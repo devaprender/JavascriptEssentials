@@ -1,10 +1,12 @@
-// JAVASCRIPT AULA 59 COMBINANDO E CORTANDO ARRAYS
-const primeiro = [{id:1}];
+//  JAVASCRIPT AULA 55 O OPERADOR SPREAD
+const primeiro = [1,2,3];
 const segundo = [4,5,6];
-primeiro[0].id = 10;
-// Combinar
-const combinado = primeiro.concat(segundo);
+
+// const combinado = primeiro.concat(segundo);
+const combinado = [...primeiro,'a',...segundo,'#'];
 console.log(combinado);
-// Dividir
-const cortado = combinado.slice();
-console.log(cortado);
+// const cortado = combinado.slice();
+const clonado = [...combinado];
+console.log(clonado);
+
+// 1,2,3,'%',4,5,6
